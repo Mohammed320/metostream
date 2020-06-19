@@ -17,14 +17,14 @@ client.on('message', message => {
   if (message.content.startsWith(prefix + 'watch')) {
   client.user.setActivity(argresult, {type: 'WATCHING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`Watch Now: **${argresult}`)
+    message.channel.sendMessage(`Watching Now: **__${argresult}__**`)
 } 
 
  
   if (message.content.startsWith(prefix + 'listen')) {
   client.user.setActivity(argresult, {type: 'LISTENING'})
      console.log('test' + argresult);
-    message.channel.sendMessage(`LISTENING Now: **${argresult}`)
+    message.channel.sendMessage(`LISTENING Now: **__${argresult}__**`)
 } 
 
 
@@ -40,14 +40,14 @@ if (message.content.startsWith(prefix + 'avatar')) {
 }
 
 if (message.content.startsWith(prefix + 'stream')) {
-  client.user.setGame(argresult, "https://www.twitch.tv/peery13");
+  client.user.setGame(argresult, "https://www.twitch.tv/iimetoda");
      console.log('test' + argresult);
-    message.channel.sendMessage(`Streaming: **${argresult}`)
+    message.channel.sendMessage(`Streaming: **__${argresult}__**`)
 } 
 if (message.content.startsWith(prefix + 'play')) {
   client.user.setGame(argresult);
      console.log('test' + argresult);
-    message.channel.sendMessage(`Playing: **${argresult}`)
+    message.channel.sendMessage(`Playing: **__${argresult}__**`)
 } 
 
 
